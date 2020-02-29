@@ -1,0 +1,18 @@
+.header {
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1440px;
+  height: 80px;
+  background: #E5E5E5;
+
+  &-search {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.invisibility-box {
+  width: 134px;
+}
