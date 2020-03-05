@@ -5,13 +5,16 @@ import Login from './login';
 import './header.scss'
 
 export default class Header extends Component {
-  render (){
+  render() {
       return (
         <div className="header">
         <div className="invisibility-box"></div>
           <div className="header-search">
             <Logo/>
-            <Search/>
+            <Search 
+            isClickSetting={this.props.isClickSetting} 
+            isClickSearch={this.props.isClickSearch}
+            changeSearchValue={this.props.changeSearchValue}/>
           </div>
           <Login/>
         </div>       

@@ -1,0 +1,101 @@
+.fullCard {
+  width: 1200px;
+  height: 461px;
+  margin: auto;
+  display: flex;
+  margin-top: 150px;
+
+  &__back {
+    width: 35px;
+    height: 461px;
+    display: flex;
+    justify-content: flex-end;
+    :hover {
+      cursor: pointer;
+    }
+
+    &-block {
+      background: #2F80ED;
+      border-radius: 5px 0px 0px 5px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__description {
+    width: 436px;
+    height: 456px;
+    background: #E5E5E5;
+    box-shadow: 5px 5px 20px rgba(51, 51, 51, 0.25);
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    border-bottom: 5px solid yellow;
+
+    &-info {
+      position: absolute;
+      bottom: 29px;
+      left: calc(223px / 2);
+      width: 223px;
+      height: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-block {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        line-height: 12px;
+
+        img {
+          margin-right: 2px;
+        }
+      }
+    }
+
+    &-desc {
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      width: 80%;
+      margin: 0 auto;
+
+      &-text {
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+      }
+
+    }
+
+    &-title {
+      display: flex;
+      width: 80%;
+      margin:35px auto;
+
+      &__title {
+        width: 248px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+      }
+
+      &__date {
+        width: 110px;
+        font-size: 10px;
+        line-height: 12px;
+        color: #828282;
+        align-self: flex-end;
+      }
+
+    }
+
+
+  }
+}

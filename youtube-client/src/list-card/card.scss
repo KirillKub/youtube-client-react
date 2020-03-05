@@ -1,0 +1,78 @@
+.card {
+  width: 263px;
+  height: 327px;
+  margin-top: 29px;
+  background: #E5E5E5;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border-bottom: 5px solid yellow;
+  position: relative;
+  margin-right: 30px;
+
+  &__image {
+    width: 223px;
+    height: 123px;
+    background: green;
+    margin: 20px auto;
+  }
+
+  &__info {
+    margin: auto;
+    width: 223px;
+    height: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-block {
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      line-height: 12px;
+
+      img {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  &__title {
+
+    p {
+      width: 243px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: right;
+      margin-right: 31px;
+    }
+  }
+
+  &__button {
+    width: 120px;
+    height: 32px;
+    background: #2F80ED;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: calc(263px / 2 - 60px);
+    bottom: 15px;
+  }
+
+  &__image-box{
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,6 @@
+export const CHANGE_SETTING = 'CHANGE_SETTING';
+export const GET_RESPONSE = 'GET_RESPONSE';
+export const SORT_BY_DATE = 'SORT_BY_DATE';
+export const SORT_BY_COUNT = 'SORT_BY_COUNT';
+export const SORT_BY_INPUT = 'SORT_BY_INPUT';
+export const CHANGE_SEARCH_VALUE = 'CHANGE_SEARCH_VALUE';
