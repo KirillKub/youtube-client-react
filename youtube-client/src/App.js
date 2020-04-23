@@ -32,6 +32,9 @@ class App extends Component {
               <FullCard cards={this.props.responseOld}
               />
             </Route>  
+            <Route path="/">
+
+            </Route>
             <Route exact path="*">
               <WrongPage/>
             </Route>
