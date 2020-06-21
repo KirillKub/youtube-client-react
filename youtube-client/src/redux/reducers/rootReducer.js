@@ -1,7 +1,7 @@
 import { CHANGE_SETTING, GET_RESPONSE, SORT_BY_COUNT, SORT_BY_DATE, SORT_BY_INPUT, CHANGE_SEARCH_VALUE,} from '../actions/actionsType';
 
-const initialState = {
-  isSetting: false,
+export const initialState = {
+  isSetting: true,
   response: null,
   responseOld: null,
   search: '',
@@ -71,20 +71,3 @@ export default function rootReducer(state = initialState, action) {
       return state;
   }
 }
-
-// let videoResponse = fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyChA0pAtRfUmokB2Hsz3RvDN18YKt8wqCI&type=video&part=snippet&maxResults=15&q=js`);
-// videoResponse
-//   .then(item => item.json())
-//   .then(element => element.items.map(elem => elem.id.videoId))
-//   .then(elem => fetch(`https://www.googleapis.com/youtube/v3/videos?key=AIzaSyChA0pAtRfUmokB2Hsz3RvDN18YKt8wqCI&id=${elem}&part=snippet,statistics`))
-//   .then(item => item.json())
-//   .then(elem => responseInfo = elem.items);
-
-// async function makeResponse(query) {
-//   let videoResponse = await fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyChA0pAtRfUmokB2Hsz3RvDN18YKt8wqCI&type=video&part=snippet&maxResults=15&q=${query}`);
-//   let videoData = await videoResponse.json();
-//   let videoId = videoData.items.map(elem => elem.id.videoId);
-//   let infoResponse = await fetch(`https://www.googleapis.com/youtube/v3/videos?key=AIzaSyChA0pAtRfUmokB2Hsz3RvDN18YKt8wqCI&id=${videoId}&part=snippet,statistics`);
-//   let cardsData = await infoResponse.json();
-//   responseInfo = cardsData.items;
-// }

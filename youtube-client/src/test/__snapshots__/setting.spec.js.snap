@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Setting if isSetting = false, return null 1`] = `ShallowWrapper {}`;
+
+exports[`Setting if isSetting = true, render component 1`] = `ShallowWrapper {}`;
